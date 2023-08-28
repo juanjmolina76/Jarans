@@ -10,3 +10,5 @@ end
 puts "\n"
 sq(3,5,7,9)
 
+#subo cometario
+
