@@ -8,3 +8,7 @@ text.each_char {|x|freqs[x] +=1}
 =begin
 probando los comentarios y subiendo en github
 =end
+
+=begin
+segundo nuevo comentario
+=end
