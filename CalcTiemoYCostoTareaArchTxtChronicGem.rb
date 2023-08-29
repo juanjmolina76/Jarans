@@ -54,3 +54,4 @@ registros = RegistroArchivo.leer_registros
 calculadora = CalculadoraCosto.new
 costo_total = calculadora.calcular_costo_total(registros)
 puts "El costo total del trabajo es: $#{costo_total}"
+# al pie
