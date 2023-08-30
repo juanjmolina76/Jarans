@@ -4,7 +4,7 @@ class Person
         @name =name
     end
 end
-
+# salto de prueba
 p=Person.new("David")
 p.name="Boby"
 puts p.name
