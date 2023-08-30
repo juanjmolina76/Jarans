@@ -1,9 +1,9 @@
-puts (1..9) {|x| puts x}
-
+(1..9).each {|x| puts x}
+print "\n"
 puts (2..5).to_a
-
+print "\n"
 puts (5..8).max
-
+print "\n"
 def sq (*p)
     p.each {|x| puts x*x}
 end
