@@ -5,6 +5,7 @@ class Person
     end
 end
 # salto de prueba
+
 p=Person.new("David")
 p.name="Boby"
 puts p.name
