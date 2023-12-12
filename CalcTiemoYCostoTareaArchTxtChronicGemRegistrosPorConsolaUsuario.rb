@@ -53,16 +53,16 @@ class RegistroArchivo
 end
 
 # Obtener registros del usuario desde la consola
-puts "Por favor, ingresa los registros de tiempo (formato: YYYY-MM-DD HH:MM:SS)"
+puts "Por favor, ingresa los registros de tiempo  )"
 loop do
-  print "Fecha (o 'q' para salir): "
+  print "Fecha (formato: YYYY-MM-DD o 'q' para salir): "
   fecha = gets.chomp
   break if fecha.downcase == 'q'
 
-  print "Hora de inicio: "
+  print "Hora de inicio ( formato: HH:MM:SS): "
   hora_inicio = gets.chomp
 
-  print "Hora de finalización: "
+  print "Hora de finalización ( formato: HH:MM:SS): "
   hora_fin = gets.chomp
 
   registro = RegistroTiempo.new(fecha, hora_inicio, hora_fin)
@@ -71,7 +71,9 @@ end
 
 registros = RegistroArchivo.leer_registros
 calculadora = CalculadoraCosto.new
-costo_total = calculadora.calcular_costo_total(registros)
-puts "El costo total del trabajo es: $#{costo_total}"
-
+costo = calculadora.calcular_costo_total(registros)
+# reemplazé costo_total por costo 
+puts "El costo total del trabajo es: $#{costo}"
+# reemplazé costo_total por costo 
 puts RegistroTiempo.get_count
+
