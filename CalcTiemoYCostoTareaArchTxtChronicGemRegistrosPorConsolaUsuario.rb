@@ -17,8 +17,8 @@ class RegistroTiempo
 2023
 
   def calcular_horas_trabajo
-    inicio = Chronic.parse(@hora_inicio, :local)
-    fin = Chronic.parse(@hora_fin, :local)
+    inicio = Chronic.parse(@hora_inicio)
+    fin = Chronic.parse(@hora_fin)
     horas_trabajo = (fin - inicio) / 3600.0  # Calcula las horas trabajadas
   end
 end
