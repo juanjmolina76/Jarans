@@ -77,3 +77,7 @@ puts "El costo total del trabajo es: $#{costo}"
 # reemplazé costo_total por costo 
 puts RegistroTiempo.get_count
 
+
+# en visual Studio Code / Terminal / Run active file
+# en el archivo txt, dejar el puntero a la derecha del ultimo digito de los segundos del ultimo registro 
+#y guardar el archivo
