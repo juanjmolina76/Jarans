@@ -14,11 +14,11 @@ class RegistroTiempo
   def self.get_count
     @@count
   end
-
+2023
 
   def calcular_horas_trabajo
-    inicio = Chronic.parse(@hora_inicio)
-    fin = Chronic.parse(@hora_fin)
+    inicio = Chronic.parse(@hora_inicio, :local)
+    fin = Chronic.parse(@hora_fin, :local)
     horas_trabajo = (fin - inicio) / 3600.0  # Calcula las horas trabajadas
   end
 end
@@ -81,3 +81,5 @@ puts RegistroTiempo.get_count
 # en visual Studio Code / Terminal / Run active file
 # en el archivo txt, dejar el puntero a la derecha del ultimo digito de los segundos del ultimo registro 
 #y guardar el archivo
+# dentro del metodo calcular_horas_trabajo, agregué el parametro :local para que reconozca 
+# el huso horario local. para eso debo actualizar la gema chronic
