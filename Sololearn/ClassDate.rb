@@ -53,4 +53,4 @@ end
 p1 = Semaforo.new
 p1.get_data
 p1.calc
-p1.rango_color
+
