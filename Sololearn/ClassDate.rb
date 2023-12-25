@@ -3,7 +3,7 @@ require 'date'
 class Semaforo 
   attr_accessor :elaboration_date, :expedition_date
   
-  def initialize (elaboration_date,expedition_date)
+  def initialize (elaboration_date, expedition_date)
     @elaboration_date = Date.parse(elaboration_date)
     @expedition_date = Date.parse(expedition_date)
     today = Date.today
@@ -27,7 +27,7 @@ def get_data
     while 
         !elaboration_date.match(/\d{4}-\d{2}-\d{2}/ || 
         !expedition_date.match(/\d{4}-\d{2}-\d{2}/)  )
-        puts "Las fechas ingresadas no son validas. Por favor, ingrese nuevamente."
+        puts "2Las fechas ingresadas no son validas. Por favor, ingrese nuevamente."
         puts "Fecha de elaboracion (formato aaaa, mm, dd): "
         elaboration_date = gets.chomp
         puts "Fecha de expedicion (formato aaaa, mm, dd): "
@@ -50,7 +50,11 @@ def rango_color
 end
 end
 
-p1 = Semaforo.new
-p1.get_data
-p1.calc
+
+semaforo = Semaforo.new
+semaforo.get_data
+semaforo.calc
+semaforo.rango_color
+
+
 
