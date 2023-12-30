@@ -1,3 +1,6 @@
-shoes{"verano"=>"sandalias","otoño"=>"traking",}
+shoes = {verano: "sandalias", otoño: "traking"}
 
-puts.shoes["otoño"]
+puts shoes[:otoño]
+
+
+
