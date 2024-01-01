@@ -115,3 +115,19 @@ end
 # BANG METHODS !
 
 
+friends.map {|friend| friend.upcase!}
+puts friends
+
+
+
+#PONER LOS METODOS ENUMERABLES DENTRO DE LA DEFICION DE METODOS
+
+
+amigos = ['Sharon','Leo','Leila','Brian','Artur']
+
+def invited_friends(amigos)
+    puts amigos.select {|amigo| amigo != 'Brian'}
+end
+
+amigos
+invited_friends(amigos)
