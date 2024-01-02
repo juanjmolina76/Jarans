@@ -1,4 +1,4 @@
-#require 'pry-byebug'
+
 
 friends = [ 'jose','Leo','Brian','Arturo','Aron']
 
@@ -111,7 +111,7 @@ votes.reduce(Hash.new(0)) do |result, vote|
     result    
 end
 
-
+binding.pry
 # BANG METHODS !
 
 
@@ -131,3 +131,25 @@ end
 
 amigos
 invited_friends(amigos)
+
+
+retenciones = [1000,5000,2000,65000]
+print retenciones.reduce(300000) {|resta, retencion| resta - retencion}
+puts"\n"
+print retenciones.reduce {|suma, retencion| suma + retencion}
+
+puts"\n"
+mis_numeros = [5,6,7,8]
+print mis_numeros.reduce(1000) {|suma, numero| suma + numero}
+
+
+votos = ["Milei","Massa","Massa","Milei","Milei"]
+ 
+votos.reduce(Hash.new(0)) do |resultado, voto| resultado[voto] += 1 
+    resultado
+end
+
+
+
+   
+
