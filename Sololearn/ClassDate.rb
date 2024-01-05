@@ -51,6 +51,7 @@ end
 end
 
 
+
 semaforo = Semaforo.new
 semaforo.get_data
 semaforo.calc
